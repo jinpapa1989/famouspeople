@@ -2,14 +2,14 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #fff;
-    color: #333;
+    background: #fffafc;
+    color: #222;
 }
 header {
-    background: #FF5A5F;
+    background: linear-gradient(90deg, #7F00FF, #E100FF);
     color: white;
     text-align: center;
-    padding: 20px 10px;
+    padding: 30px 10px;
 }
 .logo {
     width: 80px;
@@ -18,10 +18,12 @@ header {
 .tagline {
     font-style: italic;
     margin: 5px 0;
+    color: #ffebf7;
 }
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 15px;
 }
 nav ul li {
     display: inline;
@@ -31,18 +33,47 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffde59;
 }
 main {
     padding: 20px;
 }
-.featured-posts {
-    background: #f9f9f9;
+.intro {
+    background: #ffe4ec;
+    border-left: 5px solid #ff6ec7;
     padding: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.featured-posts {
+    background: #f0f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+.featured-posts .post {
+    background: #fff9f3;
+    padding: 12px;
+    border-left: 4px solid #f96;
+    margin-bottom: 12px;
+    transition: background 0.3s ease;
+}
+.featured-posts .post:hover {
+    background: #fff2e8;
+}
+a {
+    color: #e91e63;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 footer {
     text-align: center;
-    background: #333;
+    background: #222;
     color: white;
     padding: 10px;
+    font-size: 0.9em;
 }
